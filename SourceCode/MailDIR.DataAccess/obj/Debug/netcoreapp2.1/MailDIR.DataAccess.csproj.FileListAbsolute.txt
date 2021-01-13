@@ -1,0 +1,8 @@
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\bin\Debug\netcoreapp2.1\MailDIR.DataAccess.deps.json
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\bin\Debug\netcoreapp2.1\MailDIR.DataAccess.dll
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\bin\Debug\netcoreapp2.1\MailDIR.DataAccess.pdb
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\obj\Debug\netcoreapp2.1\MailDIR.DataAccess.AssemblyInfoInputs.cache
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\obj\Debug\netcoreapp2.1\MailDIR.DataAccess.AssemblyInfo.cs
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\obj\Debug\netcoreapp2.1\MailDIR.DataAccess.csproj.CoreCompileInputs.cache
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\obj\Debug\netcoreapp2.1\MailDIR.DataAccess.dll
+C:\Projects\EF_Core_MVC\MailDIR\MailDIR.DataAccess\obj\Debug\netcoreapp2.1\MailDIR.DataAccess.pdb
