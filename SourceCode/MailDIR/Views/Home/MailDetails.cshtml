@@ -1,0 +1,87 @@
+﻿@using MailDIR.DataAccess;
+@model IEnumerable<MailDetailsViewModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+            table th {
+                background-color: #B8DBFD;
+                color: #333;
+                font-weight: bold;
+            }
+
+            table th, table td {
+                padding: 5px;
+                border: 1px solid #ccc;
+            }
+
+            table, table table td {
+                border: 0px solid #ccc;
+            }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <br />
+        <br />
+        <div style="overflow: scroll;width:1450px;height:600px">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th colspan="10" style="text-align:center">
+                        Mail Details
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>UserName</th>
+                    <th>MailItemName</th>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>cc</th>
+                    <th>Bcc</th>
+                    <th>Subject</th>
+                    <th>X_FileName</th>
+                    <th>MailMessage</th>
+                </tr>
+                @foreach (MailDetailsViewModel mail in Model)
+                {
+                    <tr>
+                        <td>@mail.UserName</td>
+                        <td>@mail.MailItemName</td>
+                        <td>@mail.Date</td>
+                        <td>@mail.From</td>
+                        <td>@mail.To</td>
+                        <td>@mail.cc</td>
+                        <td>@mail.Bcc</td>
+                        <td>@mail.Subject</td>
+                        <td>@mail.X_FileName</td>
+                        <td>@mail.MailMessage</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </center>
+
+</body>
+</html>

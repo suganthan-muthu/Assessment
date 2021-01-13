@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <center>
+            <table style="width:70%;background-color:lightcoral">
+                <tr>
+                    <td style="width:28%">
+                        @Html.ActionLink("Drill Down", // <-- Link text
+                     "Users", "home" // <-- Action Method Name
+                     )
+
+                    </td>
+
+                    <td style="width:28%">
+                        @Html.ActionLink("Search", // <-- Link text
+                    "MailDetailsBySearch", "home" // <-- Action Method Name
+                    )
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+        </footer>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

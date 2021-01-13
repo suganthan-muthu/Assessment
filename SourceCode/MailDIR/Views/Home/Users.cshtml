@@ -1,0 +1,73 @@
+﻿@using MailDIR.DataAccess;
+@model IEnumerable<User>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+
+            table th {
+                background-color: #B8DBFD;
+                color: #333;
+                font-weight: bold;
+            }
+
+            table th, table td {
+                padding: 5px;
+                border: 1px solid #ccc;
+            }
+
+            table, table table td {
+                border: 0px solid #ccc;
+            }
+    </style>
+</head>
+<body>
+
+    <center>
+
+        <br />
+        <br />
+        <table cellpadding="0" cellspacing="0" width="50%">
+            <tr>
+                <th>
+                    User Name
+                </th>
+            </tr>
+
+            @foreach (User user in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(user.Name, // <-- Link text
+                     "MailItemsUserId", // <-- Action Method Name
+                     new { id = user.Id }, // <-- Route value
+                     null // <-- htmlArguments
+                    )
+                    </td>
+
+                </tr>
+
+            }
+        </table>
+    </center>
+
+</body>
+</html>
